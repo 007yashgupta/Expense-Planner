@@ -34,14 +34,14 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.purple,
             colorScheme: ColorScheme.fromSwatch(accentColor: Colors.amber),
             fontFamily: 'Quicksand',
-            appBarTheme: AppBarTheme(textTheme: ThemeData.light().textTheme.copyWith(
-                       titleLarge: TextStyle(
-                         fontFamily: 'OpenSans',
-                         fontSize: 20,
-                         fontWeight: FontWeight.bold,
-                       ),
-                     ),
-                     ),
+            // appBarTheme: AppBarTheme(: ThemeData.light().textTheme.copyWith(
+            //            titleLarge: TextStyle(
+            //              fontFamily: 'OpenSans',
+            //              fontSize: 20,
+            //              fontWeight: FontWeight.bold,
+            //            ),
+            //          ),
+            //          ),
        
             
             textTheme: ThemeData.light().textTheme.copyWith(
@@ -193,7 +193,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final appBar=        AppBar(
           title: Text('Expense Planner',
           
-        style: Theme.of(context).appBarTheme.textTheme!.titleSmall,),
+        style: Theme.of(context).textTheme.titleSmall),
           backgroundColor: Theme.of(context).primaryColor,
           
           actions: <Widget>[

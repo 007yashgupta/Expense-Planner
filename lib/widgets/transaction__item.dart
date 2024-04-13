@@ -22,7 +22,7 @@ class TransactionItem extends StatefulWidget {
 }
 
 class _TransactionItemState extends State<TransactionItem> {
-  @override
+ 
 
   Color? _bgColor;
 
@@ -42,6 +42,7 @@ class _TransactionItemState extends State<TransactionItem> {
     super.initState(); 
   
   }
+   @override
 
   Widget build(BuildContext context) {
     return Card(
